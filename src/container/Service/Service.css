@@ -1,0 +1,71 @@
+.app__service {
+    position: relative;
+}
+
+.app__service-content {
+    width: 100%;
+    z-index: 2;
+}
+
+.app__service-content_artist {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.app__service-content_img {
+    margin: 2rem 4rem;
+}
+
+.app__service-content_img img {
+    height: 600px;
+}
+
+.app__service-content_lover {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.app__service-content_artist p,
+.app__service-content_lover p {
+    margin: 2rem 0;
+    color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__service-content_img img {
+        height: 1110px;
+    }
+
+    .app__service-content_artist p,
+    .app__service-content_lover p {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app__aboutus-content {
+        flex-direction: column;
+    }
+
+    .app__service-content_img {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__service-content_img img {
+        height: 400px;
+        width: 150px;
+    }
+
+}

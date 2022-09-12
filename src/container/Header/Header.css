@@ -1,0 +1,12 @@
+
+.app__header-h1 {
+    font-family: var(--font-base);
+    color : var(--color-bright-blue);
+    letter-spacing: uppercase;
+    line-height : 117px;
+    font-size: 90px;
+}
+
+.app__header-img {
+    width: 500%;
+}
